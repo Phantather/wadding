@@ -18,7 +18,7 @@ body {
 .container {
     max-width: 500px;
     margin: 0 auto;
-    padding: 0 40px;
+    padding: 0 50px;
 }
 
 .first {
@@ -100,4 +100,31 @@ label {
     background: white;
     border: none;
     border-radius: 5px;
+}
+
+
+@media only screen and (max-width: 480px) {
+    .first__title {
+        font-size: 20px;
+    }
+
+    .first__second-title {
+        font-size: 18px;
+    }
+
+    .first__text {
+        font-size: 10px;
+    }
+
+    .first__date {
+        font-size: 10px;
+    }
+
+    .first__welcome {
+        font-size: 12px;
+    }
+
+    .first__link {
+        font-size: 10px;
+    }
 }
