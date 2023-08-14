@@ -16,7 +16,8 @@ body {
 }
 
 .container {
-    max-width: 500px;
+    max-width: 676px;
+    width: 100%;
     margin: 0 auto;
     padding: 0 50px;
 }
@@ -103,9 +104,93 @@ label {
 }
 
 
-@media only screen and (max-width: 480px) {
+/* Media query for screens up to 576px (small tablets) */
+@media only screen and (max-width: 576px) {
+    .container {
+        padding: 0 10px;
+    }
+
+    .first {
+        padding-top: 50px;
+    }
+
     .first__title {
+        font-size: 26px;
+    }
+
+    .first__second-title {
         font-size: 20px;
+    }
+
+    .first__text {
+        font-size: 12px;
+    }
+
+    .first__date {
+        font-size: 12px;
+    }
+
+    .first__welcome {
+        font-size: 12px;
+    }
+
+    .first__link {
+        font-size: 12px;
+    }
+}
+
+/* Media query for screens up to 500px */
+@media only screen and (max-width: 500px) {
+    .container {
+        padding: 0 5px;
+    }
+
+    .first {
+        padding-top: 40px;
+    }
+
+    .first__title {
+        font-size: 24px;
+    }
+
+    .first__second-title {
+        font-size: 18px;
+    }
+
+    .first__text {
+        font-size: 11px;
+    }
+
+    .first__date {
+        font-size: 11px;
+        margin: 30px 0;
+    }
+
+    .first__date p {
+        width: 70px;
+    }
+
+    .first__welcome {
+        font-size: 11px;
+    }
+
+    .first__link {
+        font-size: 11px;
+    }
+}
+
+/* Media query for screens up to 425px (small phones) */
+@media only screen and (max-width: 425px) {
+    .container {
+        padding: 0 5px;
+    }
+
+    .first {
+        padding-top: 30px;
+    }
+
+    .first__title {
+        font-size: 22px;
     }
 
     .first__second-title {
@@ -118,13 +203,102 @@ label {
 
     .first__date {
         font-size: 10px;
+        margin: 20px 0;
+    }
+
+    .first__date p {
+        width: 60px;
     }
 
     .first__welcome {
-        font-size: 12px;
+        font-size: 10px;
     }
 
     .first__link {
         font-size: 10px;
+    }
+}
+
+/* Media query for screens up to 375px (smaller phones) */
+@media only screen and (max-width: 375px) {
+    .container {
+        padding: 0 2px;
+    }
+
+    .first {
+        padding-top: 20px;
+    }
+
+    .first__title {
+        font-size: 20px;
+    }
+
+    .first__second-title {
+        font-size: 16px;
+    }
+
+    .first__text {
+        font-size: 10px;
+        margin-bottom: 15px;
+    }
+
+    .first__date {
+        font-size: 10px;
+        margin: 20px 0;
+    }
+
+    .first__date p {
+        width: 60px;
+    }
+
+    .first__welcome {
+        font-size: 10px;
+        margin-bottom: 15px;
+    }
+
+    .first__link {
+        font-size: 10px;
+    }
+}
+
+/* Media query for screens up to 320px (smallest phones) */
+@media only screen and (max-width: 320px) {
+    .container {
+        padding: 0 2px;
+    }
+
+    .first {
+        padding-top: 10px;
+    }
+
+    .first__title {
+        font-size: 18px;
+    }
+
+    .first__second-title {
+        font-size: 14px;
+    }
+
+    .first__text {
+        font-size: 8px;
+        margin-bottom: 10px;
+    }
+
+    .first__date {
+        font-size: 8px;
+        margin: 15px 0;
+    }
+
+    .first__date p {
+        width: 50px;
+    }
+
+    .first__welcome {
+        font-size: 8px;
+        margin-bottom: 10px;
+    }
+
+    .first__link {
+        font-size: 8px;
     }
 }
