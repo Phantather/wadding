@@ -1,19 +1,20 @@
 let days = document.querySelector('#days');
 let hours = document.querySelector('#hours');
+let minutes = document.querySelector('#minutes')
 
+let deadline = new Date(2023, 8, 22, 17, 0, 0); // Установка даты и времени
 
-
-let deadline = new Date('2023-09-22');
-
-
-const day = (days, hours) =>{
+const updateCountdown = (daysElement, hoursElement) => {
     let current = new Date();
-    let result = new Date(deadline) - current;
-    hours.textContent = (Math.floor(result / 1000 / 60 /60) % 24) - 12;
-    days.textContent = Math.floor(result / 1000 / 60 /60 / 24);
-    setInterval(() => {
-        day(days, hours)
-    }, 1000);
+    let result = deadline - current;
+    let hoursRemaining = Math.floor(result / 1000 / 60 / 60) % 24;
+    let daysRemaining = Math.floor(result / 1000 / 60 / 60 / 24);
+    hoursElement.textContent = hoursRemaining < 10 ? `0${hoursRemaining}` : hoursRemaining;
+    daysElement.textContent = daysRemaining;
 };
 
-day(days, hours);
+updateCountdown(days, hours);
+
+setInterval(() => {
+    updateCountdown(days, hours);
+}, 1000);
