@@ -6,7 +6,7 @@
     padding: 0;
     box-sizing: border-box;
     list-style-type: none;
-    text-decoration: none;
+    /*text-decoration: none;*/
     font-family: 'Lobster', cursive;
 }
 
@@ -19,7 +19,7 @@ body {
     max-width: 676px;
     width: 100%;
     margin: 0 auto;
-    padding: 0 50px;
+    padding: 0 100px;
 }
 
 .first {
@@ -39,7 +39,7 @@ body {
 
 .first__text {
     text-align: center;
-    font-size: 16px;
+    font-size: 19px;
     color: white;
     font-weight: 600;
     line-height: 30px;
@@ -55,7 +55,7 @@ body {
     justify-content: center;
     column-gap: 20px;
     text-align: center;
-    font-size: 16px;
+    font-size: 19px;
     color: white;
     font-weight: 600;
     line-height: 30px;
@@ -74,10 +74,13 @@ body {
     align-items: center;
     row-gap: 20px;
     margin-bottom: 30px;
+    font-size: 19px;
 }
 
 .first__link {
+    display: block;
     color: white;
+    text-align: center;
 }
 
 .first__form {
@@ -103,66 +106,57 @@ label {
     border-radius: 5px;
 }
 
+.first__form input {
+    text-align: center;
+    padding: 8px 0;
+}
 
-/* Media query for screens up to 576px (small tablets) */
+
+
 @media only screen and (max-width: 576px) {
-    .container {
-        padding: 0 10px;
-    }
-
     .first {
         padding-top: 50px;
     }
 
-    .first__title {
-        font-size: 26px;
-    }
+
 
     .first__second-title {
         font-size: 20px;
     }
 
     .first__text {
-        font-size: 12px;
+        font-size: 16px;
     }
 
     .first__date {
-        font-size: 12px;
+        font-size: 16px;
     }
 
     .first__welcome {
-        font-size: 12px;
+        font-size: 16px;
     }
 
     .first__link {
-        font-size: 12px;
+        font-size: 16px;
     }
 }
 
 /* Media query for screens up to 500px */
 @media only screen and (max-width: 500px) {
-    .container {
-        padding: 0 5px;
-    }
-
     .first {
         padding-top: 40px;
     }
 
-    .first__title {
-        font-size: 24px;
-    }
-
     .first__second-title {
-        font-size: 18px;
+        font-size: 17px;
     }
 
     .first__text {
-        font-size: 11px;
+        font-size: 13px;
     }
 
     .first__date {
-        font-size: 11px;
+        font-size: 13px;
         margin: 30px 0;
     }
 
@@ -171,79 +165,38 @@ label {
     }
 
     .first__welcome {
-        font-size: 11px;
+        font-size: 13px;
     }
 
     .first__link {
-        font-size: 11px;
+        font-size: 13px;
     }
 }
 
 /* Media query for screens up to 425px (small phones) */
 @media only screen and (max-width: 425px) {
     .container {
-        padding: 0 5px;
+        padding: 0 80px;
     }
 
     .first {
         padding-top: 30px;
     }
 
-    .first__title {
-        font-size: 22px;
-    }
-
-    .first__second-title {
-        font-size: 18px;
-    }
-
-    .first__text {
-        font-size: 10px;
-    }
-
-    .first__date {
-        font-size: 10px;
-        margin: 20px 0;
-    }
-
-    .first__date p {
-        width: 60px;
-    }
-
-    .first__welcome {
-        font-size: 10px;
-    }
-
-    .first__link {
-        font-size: 10px;
-    }
-}
-
-/* Media query for screens up to 375px (smaller phones) */
-@media only screen and (max-width: 375px) {
-    .container {
-        padding: 0 2px;
-    }
-
-    .first {
-        padding-top: 20px;
-    }
-
-    .first__title {
-        font-size: 20px;
-    }
+    /*.first__title {*/
+    /*    font-size: 22px;*/
+    /*}*/
 
     .first__second-title {
         font-size: 16px;
     }
 
     .first__text {
-        font-size: 10px;
-        margin-bottom: 15px;
+        font-size: 16px;
     }
 
     .first__date {
-        font-size: 10px;
+        font-size: 12px;
         margin: 20px 0;
     }
 
@@ -252,19 +205,64 @@ label {
     }
 
     .first__welcome {
-        font-size: 10px;
+        font-size: 13px;
+    }
+
+    .first__link {
+        font-size: 13px;
+    }
+}
+
+/* Media query for screens up to 375px (smaller phones) */
+@media only screen and (max-width: 375px) {
+    .container {
+        padding: 0 40px;
+    }
+
+    .first {
+        padding-top: 20px;
+    }
+
+    /*.first__title {*/
+    /*    font-size: 20px;*/
+    /*}*/
+
+    .first__second-title {
+        font-size: 16px;
+    }
+
+    .first__text {
+        font-size: 16px;
+        margin-bottom: 15px;
+    }
+
+    .first__date {
+        font-size: 13px;
+        margin: 20px 0;
+    }
+
+    .first__date p {
+        width: 60px;
+    }
+
+    .first__welcome {
+        font-size: 13px;
         margin-bottom: 15px;
     }
 
     .first__link {
-        font-size: 10px;
+        font-size: 13px;
     }
 }
 
 /* Media query for screens up to 320px (smallest phones) */
 @media only screen and (max-width: 320px) {
+    body {
+        /*background: rgba(24, 42, 24, 0.8);*/
+        background: url("../images/2023-07-17 16.00.57.jpg")center no-repeat #603206;
+    }
     .container {
-        padding: 0 2px;
+        padding: 0 5px;
     }
 
     .first {
@@ -272,33 +270,33 @@ label {
     }
 
     .first__title {
-        font-size: 18px;
+        font-size: 22px;
     }
 
     .first__second-title {
-        font-size: 14px;
+        font-size: 15px;
     }
 
     .first__text {
-        font-size: 8px;
+        font-size: 14px;
         margin-bottom: 10px;
     }
 
-    .first__date {
-        font-size: 8px;
-        margin: 15px 0;
-    }
+    /*.first__date {*/
+    /*    font-size: 8px;*/
+    /*    margin: 15px 0;*/
+    /*}*/
 
     .first__date p {
         width: 50px;
     }
 
     .first__welcome {
-        font-size: 8px;
+        font-size: 14px;
         margin-bottom: 10px;
     }
 
     .first__link {
-        font-size: 8px;
+        font-size: 14px;
     }
 }
